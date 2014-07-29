@@ -190,8 +190,8 @@ header {
   padding-right: 10%;
   color: #fff;
   font-size: 2em;
-  line-height: 7em;
-  text-shadow: 0 0 0.5em #fff, 0 0 0.3em #de1900, 0 0 0.2em #ffe5a8;
+  line-height: 5.5em;
+  text-shadow: 0 0 0.6em #fff, 0 0 0.4em #de1900, 0 0 0.3em #ffe5a8;
   text-align: right;
 }
 header p {
@@ -210,24 +210,24 @@ header img {
 article {
   position: relative;
   font-size: 1em;
-  padding: 2em 2em 1em;
+  padding: 0.7em 2em 1.5em;
   margin: 0.5em 1.5em 2em;
   color: #e72900;
   border-radius: 5em;
   background-color: #fff;
-  -webkit-filter: drop-shadow(0 0 1.5em rgba(255,255,255,0.8));
+  -webkit-filter: drop-shadow(0 0 20px rgba(255,255,255,0.9));
   z-index: 5;
 }
 article strong {
   display: block;
   font-size: 1.6em;
-  line-height: 1.5em;
+  line-height: 1.4em;
   text-indent: 1em;
 }
 article p {
-  font-size: 1.3em;
+  font-size: 1.5em;
   text-indent: 2em;
-  line-height: 1.5em;
+  line-height: 1.4em;
 }
 article .indent0 {
   text-indent: 0;
@@ -243,6 +243,10 @@ article i {
   border-style: solid;
   border-color: transparent transparent #fff;
   z-index: -1;
+}
+article .tran3 {
+  left: 3.5em;
+  -webkit-transform: rotate(18deg);
 }
 article img {
   display: block;
@@ -272,7 +276,7 @@ figure .img1 {
   position: absolute;
   left: 1.8em;
   top: 0;
-  height: 55%;
+  height: 52%;
   -webkit-transform: rotate(-7deg);
   z-index: 4;
 }
