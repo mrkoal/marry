@@ -313,7 +313,10 @@ figure .img4 {
   bottom: 0;
   height: 100%;
   -webkit-transform: rotateZ(356deg);
+  -webkit-transition-delay: 2s;
   -webkit-animation: img4 1s forwards;
+  -webkit-backface-visibility: hidden;
+  -webkit-perspective: 1000;
   z-index: 1;
 }
 .tac {
