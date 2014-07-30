@@ -268,6 +268,7 @@ figure {
   margin-bottom: 1.5em;
 }
 figure img {
+  display: none;
   box-shadow: 0 0 8px #000;
   border-radius: 1px;
 }
@@ -276,11 +277,6 @@ figure .img1 {
   left: 1.8em;
   top: 0;
   height: 52%;
-  -webkit-transform: rotateZ(-367deg);
-  -webkit-transition-delay: 500ms;
-  -webkit-animation: img1 1s forwards;
-  -webkit-backface-visibility: hidden;
-  -webkit-perspective: 1000;
   z-index: 4;
 }
 figure .img2 {
@@ -288,11 +284,6 @@ figure .img2 {
   right: 1.8em;
   top: 0;
   height: 49%;
-  -webkit-transform: rotateZ(355deg);
-  -webkit-transition-delay: 500ms;
-  -webkit-animation: img2 1s forwards;
-  -webkit-backface-visibility: hidden;
-  -webkit-perspective: 1000;
   z-index: 3;
 }
 figure .img3 {
@@ -300,11 +291,6 @@ figure .img3 {
   left: 2.3em;
   top: 50%;
   height: 52%;
-  -webkit-transform: rotateZ(-368deg);
-  -webkit-transition-delay: 500ms;
-  -webkit-animation: img3 1s forwards;
-  -webkit-backface-visibility: hidden;
-  -webkit-perspective: 1000;
   z-index: 2;
 }
 figure .img4 {
@@ -312,12 +298,38 @@ figure .img4 {
   right: 2.2em;
   bottom: 0;
   height: 100%;
+  z-index: 1;
+}
+.imgs img {
+  display: block;
+}
+.imgs .img1 {
+  -webkit-transform: rotateZ(-367deg);
+  -webkit-transition-delay: 500ms;
+  -webkit-animation: img1 1s forwards;
+  -webkit-backface-visibility: hidden;
+  -webkit-perspective: 1000;
+}
+.imgs .img2 {
+  -webkit-transform: rotateZ(355deg);
+  -webkit-transition-delay: 500ms;
+  -webkit-animation: img2 1s forwards;
+  -webkit-backface-visibility: hidden;
+  -webkit-perspective: 1000;
+}
+.imgs .img3 {
+  -webkit-transform: rotateZ(-368deg);
+  -webkit-transition-delay: 500ms;
+  -webkit-animation: img3 1s forwards;
+  -webkit-backface-visibility: hidden;
+  -webkit-perspective: 1000;
+}
+.imgs .img4 {
   -webkit-transform: rotateZ(356deg);
   -webkit-transition-delay: 500ms;
   -webkit-animation: img4 1s forwards;
   -webkit-backface-visibility: hidden;
   -webkit-perspective: 1000;
-  z-index: 1;
 }
 .tac {
   text-align: center;
