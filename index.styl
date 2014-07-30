@@ -160,11 +160,11 @@ i
 
 
 html
-    height 100%
     font-size 62.5%
+    overflow-y auto
+    -webkit-overflow-scrolling touch
 
 body
-    height 100%
     background-color #3b0104
     background-repeat repeat-y
     background-size 100% auto
@@ -173,8 +173,6 @@ body
     background-image -webkit-image-set(url(img/bg1x.png) 1x,url(img/bg2x.png) 2x)       
     font 100%/1.5 Hiragino Sans GB, WenQuanYi Micro Hei,arial,s('\5B8B\4F53'),sans-serif
     color #333
-    overflow-x hidden
-
 a
     color #333
 
@@ -274,7 +272,7 @@ figure
         left 1.8em
         top 0
         height 52%
-        -webkit-transform rotate(-7deg)
+        -webkit-transform rotateZ(-7deg)
         z-index 4
 
     .img2
@@ -282,7 +280,7 @@ figure
         right 1.8em
         top 0
         height 49%
-        -webkit-transform rotate(5deg)
+        -webkit-transform rotateZ(5deg)
         z-index 3
 
     .img3
@@ -290,7 +288,7 @@ figure
         left 2.3em
         top 50%
         height 52%
-        -webkit-transform rotate(-8deg)
+        -webkit-transform rotateZ(-8deg)
         z-index 2
 
     .img4
@@ -298,7 +296,7 @@ figure
         right 2.2em
         bottom 0
         height 100%
-        -webkit-transform rotate(4deg)
+        -webkit-transform rotateZ(4deg)
         z-index 1
 
 .tac
