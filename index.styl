@@ -165,12 +165,13 @@ html
     -webkit-overflow-scrolling touch
 
 body
+    min-height 500px
     background-color #3b0104
     background-repeat repeat-y
     background-size 100% auto
     background-position 0 .5em
     background-image url(img/bg1x.png)
-    background-image -webkit-image-set(url(img/bg1x.png) 1x,url(img/bg2x.png) 2x)       
+    // background-image -webkit-image-set(url(img/bg1x.png) 1x,url(img/bg2x.png) 2x)       
     font 100%/1.5 Hiragino Sans GB, WenQuanYi Micro Hei,arial,s('\5B8B\4F53'),sans-serif
     color #333
 a
@@ -211,7 +212,7 @@ article
     border-radius 5em
     background-color: #FFF
     -webkit-filter drop-shadow(0 0 20px rgba(255,255,255,.9))
-    z-index 5
+    z-index 4
 
     strong
         display block
@@ -272,7 +273,9 @@ figure
         left 1.8em
         top 0
         height 52%
-        -webkit-transform rotateZ(-7deg)
+        -webkit-transform rotateZ(-367deg) //-7deg
+        // -webkit-transition-delay 200ms
+        -webkit-animation img1 1s forwards
         z-index 4
 
     .img2
@@ -280,7 +283,9 @@ figure
         right 1.8em
         top 0
         height 49%
-        -webkit-transform rotateZ(5deg)
+        -webkit-transform rotateZ(355deg) //5
+        // -webkit-transition-delay 200ms
+        -webkit-animation img2 1s forwards
         z-index 3
 
     .img3
@@ -288,7 +293,9 @@ figure
         left 2.3em
         top 50%
         height 52%
-        -webkit-transform rotateZ(-8deg)
+        -webkit-transform rotateZ(-368deg) //-8
+        // -webkit-transition-delay 200ms
+        -webkit-animation img3 1s forwards
         z-index 2
 
     .img4
@@ -296,7 +303,9 @@ figure
         right 2.2em
         bottom 0
         height 100%
-        -webkit-transform rotateZ(4deg)
+        -webkit-transform rotateZ(356deg) //4
+        // -webkit-transition-delay 200ms
+        -webkit-animation img4 1s forwards
         z-index 1
 
 .tac
@@ -315,3 +324,64 @@ figure
         display inline-block
         color #fff
 
+@-webkit-keyframes img1
+    0%
+        opacity 0
+        top -12em
+        -webkit-transform rotateZ(-0)
+    30%
+        opacity 1
+        top 0    
+        -webkit-transform rotateZ(-0)
+    80%
+        opacity 1
+        top 0
+        -webkit-transform rotateZ(-360deg)
+    100%
+        opacity 1
+        top 0
+        -webkit-transform rotateZ(-367deg)
+
+@-webkit-keyframes img2
+    0%
+        opacity 0
+        top -12em
+        -webkit-transform rotateZ(-0)
+    30%
+        opacity .8
+        top 0    
+        -webkit-transform rotateZ(-0)
+    80%
+        opacity 1
+        top 0
+        -webkit-transform rotateZ(-348deg)
+    100%
+        opacity 1
+        top 0
+        -webkit-transform rotateZ(-355deg)
+
+@-webkit-keyframes img3
+    0%
+        opacity 0
+        top -12em
+        -webkit-transform rotateZ(-0)
+    30%
+        opacity .8
+        top 50%    
+        -webkit-transform rotateZ(-0)
+    80%
+        opacity 1
+        top 50%
+        -webkit-transform rotateZ(-360deg)
+    100%
+        opacity 1
+        top 50%
+        -webkit-transform rotateZ(-368deg)
+
+@-webkit-keyframes img4
+    0%
+        opacity 0
+        -webkit-transform rotateZ(356deg)
+    100%
+        opacity 1
+        -webkit-transform rotateZ(356deg)
