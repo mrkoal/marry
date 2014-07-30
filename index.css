@@ -277,7 +277,10 @@ figure .img1 {
   top: 0;
   height: 52%;
   -webkit-transform: rotateZ(-367deg);
+  -webkit-transition-delay: 2s;
   -webkit-animation: img1 1s forwards;
+  -webkit-backface-visibility: hidden;
+  -webkit-perspective: 1000;
   z-index: 4;
 }
 figure .img2 {
@@ -286,7 +289,10 @@ figure .img2 {
   top: 0;
   height: 49%;
   -webkit-transform: rotateZ(355deg);
+  -webkit-transition-delay: 2s;
   -webkit-animation: img2 1s forwards;
+  -webkit-backface-visibility: hidden;
+  -webkit-perspective: 1000;
   z-index: 3;
 }
 figure .img3 {
@@ -295,7 +301,10 @@ figure .img3 {
   top: 50%;
   height: 52%;
   -webkit-transform: rotateZ(-368deg);
+  -webkit-transition-delay: 2s;
   -webkit-animation: img3 1s forwards;
+  -webkit-backface-visibility: hidden;
+  -webkit-perspective: 1000;
   z-index: 2;
 }
 figure .img4 {
@@ -326,66 +335,54 @@ figure .img4 {
 @-webkit-keyframes img1 {
   0% {
     opacity: 0;
-    top: -12em;
     -webkit-transform: rotateZ(0);
   }
   30% {
     opacity: 1;
-    top: 0;
     -webkit-transform: rotateZ(0);
   }
   80% {
     opacity: 1;
-    top: 0;
     -webkit-transform: rotateZ(-360deg);
   }
   100% {
     opacity: 1;
-    top: 0;
     -webkit-transform: rotateZ(-367deg);
   }
 }
 @-webkit-keyframes img2 {
   0% {
     opacity: 0;
-    top: -12em;
     -webkit-transform: rotateZ(0);
   }
   30% {
     opacity: 0.8;
-    top: 0;
     -webkit-transform: rotateZ(0);
   }
   80% {
     opacity: 1;
-    top: 0;
     -webkit-transform: rotateZ(-348deg);
   }
   100% {
     opacity: 1;
-    top: 0;
     -webkit-transform: rotateZ(-355deg);
   }
 }
 @-webkit-keyframes img3 {
   0% {
     opacity: 0;
-    top: -12em;
     -webkit-transform: rotateZ(0);
   }
   30% {
     opacity: 0.8;
-    top: 50%;
     -webkit-transform: rotateZ(0);
   }
   80% {
     opacity: 1;
-    top: 50%;
     -webkit-transform: rotateZ(-360deg);
   }
   100% {
     opacity: 1;
-    top: 50%;
     -webkit-transform: rotateZ(-368deg);
   }
 }
