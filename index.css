@@ -277,7 +277,7 @@ figure .img1 {
   top: 0;
   height: 52%;
   -webkit-transform: rotateZ(-367deg);
-  -webkit-transition-delay: 2s;
+  -webkit-transition-delay: 500ms;
   -webkit-animation: img1 1s forwards;
   -webkit-backface-visibility: hidden;
   -webkit-perspective: 1000;
@@ -289,7 +289,7 @@ figure .img2 {
   top: 0;
   height: 49%;
   -webkit-transform: rotateZ(355deg);
-  -webkit-transition-delay: 2s;
+  -webkit-transition-delay: 500ms;
   -webkit-animation: img2 1s forwards;
   -webkit-backface-visibility: hidden;
   -webkit-perspective: 1000;
@@ -301,7 +301,7 @@ figure .img3 {
   top: 50%;
   height: 52%;
   -webkit-transform: rotateZ(-368deg);
-  -webkit-transition-delay: 2s;
+  -webkit-transition-delay: 500ms;
   -webkit-animation: img3 1s forwards;
   -webkit-backface-visibility: hidden;
   -webkit-perspective: 1000;
@@ -313,7 +313,7 @@ figure .img4 {
   bottom: 0;
   height: 100%;
   -webkit-transform: rotateZ(356deg);
-  -webkit-transition-delay: 2s;
+  -webkit-transition-delay: 500ms;
   -webkit-animation: img4 1s forwards;
   -webkit-backface-visibility: hidden;
   -webkit-perspective: 1000;
@@ -392,6 +392,14 @@ figure .img4 {
 @-webkit-keyframes img4 {
   0% {
     opacity: 0;
+    -webkit-transform: rotateZ(356deg);
+  }
+  30% {
+    opacity: 1;
+    -webkit-transform: rotateZ(356deg);
+  }
+  80% {
+    opacity: 1;
     -webkit-transform: rotateZ(356deg);
   }
   100% {
