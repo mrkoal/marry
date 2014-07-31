@@ -85,7 +85,7 @@
 </script>
 <script type="text/javascript">
     var map = new BMap.Map("map-canvas");  
-    map.centerAndZoom(new BMap.Point(113.557152,22.238018), 18);  
+    map.centerAndZoom(new BMap.Point(113.557152,22.238018), 14);  
     var marker = new BMap.Marker(new BMap.Point(113.557152,22.238018));        // 创建标注      
     map.addOverlay(marker);
     var opts = {      
@@ -95,12 +95,6 @@
     }      
     var infoWindow = new BMap.InfoWindow("珠海市香洲区拱北北岭岭南路68号", opts);  // 创建信息窗口对象      
     map.openInfoWindow(infoWindow, marker.getPosition());      // 打开信息窗口  
-   var myGeo = new BMap.Geocoder();      
-    // 根据坐标得到地址描述    
-    myGeo.getLocation(new BMap.Point(113.557152,22.238018), function(result){      
-                     if (result){      
-                         alert(result.address);      
-                      }      
-    });
+
 </script>
 </html>
