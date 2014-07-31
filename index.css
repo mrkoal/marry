@@ -248,9 +248,10 @@ article .tran3 {
   left: 3.5em;
   -webkit-transform: rotate(18deg);
 }
-article img {
+article .map {
   display: block;
   width: 99%;
+  height: 12em;
   margin: 0.5em auto;
 }
 article a {

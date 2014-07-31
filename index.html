@@ -36,8 +36,11 @@
         <strong>交通指引:</strong>
         <p class="indent0">珠海市香洲区拱北北岭岭南路68号正邦广场3楼XXX厅(沃尔玛拱 北店楼上)</p>
         <p class="indent0">酒店电话 <span type="tel">(0756)6838888</span> <span type="tel">(0756)6838882</span> </p>
-        <a href="http://l.map.qq.com/6246273790?m"><img src="img/map.png" alt="正邦广场"></a>
-        <a class="tac" href="http://l.map.qq.com/6246273790?m">(触摸地图导航)</a>
+        <!-- <a href="http://l.map.qq.com/6246273790?m"><img src="img/map.png" alt="正邦广场"></a>
+        <a class="tac" href="http://l.map.qq.com/6246273790?m">(触摸地图导航)</a> -->
+        <div class="maps map-canvas" >
+            
+        </div>
         <i class="tran3"></i>
     </article>
     <article class="last">
@@ -59,5 +62,18 @@
     function func2(){
         document.getElementById('paos').className = "pao"
     }
+
+    var map;
+    function initialize() {
+      var mapOptions = {
+        zoom: 8,
+        center: new google.maps.LatLng(-34.397, 150.644)
+      };
+      map = new google.maps.Map(document.getElementById('map-canvas'),
+          mapOptions);
+    }
 </script>
+<script type="text/javascript"
+      src="http://maps.googleapis.com/maps/api/js?key=AIzaSyBTUiButPTdfVHRJdcQlKedQLvx1i_58tU&sensor=true">
+    </script>
 </html>
