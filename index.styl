@@ -247,9 +247,14 @@ article
 
     .map
          display block
+         overflow hidden
          width 99%
          height 22em
          margin .5em auto
+
+         img
+             display block
+             width 100%
 
     a
         display block
@@ -267,7 +272,7 @@ figure
     margin-bottom 1.5em
 
     img
-        display none
+        opacity 0
         box-shadow 0 0 8px #000
         border-radius 1px
 
@@ -304,27 +309,24 @@ figure
 
 .imgs
     
-    img
-        display block
-
     .img1
         -webkit-transform rotateZ(-367deg) //-7deg
-        -webkit-animation img1 800ms forwards
+        -webkit-animation img1 1.5s forwards
         -webkit-backface-visibility hidden
         -webkit-perspective 1000
     .img2
         -webkit-transform rotateZ(355deg) //5
-        -webkit-animation img2 800ms forwards
+        -webkit-animation img2 1.5s forwards
         -webkit-backface-visibility hidden
         -webkit-perspective 1000
     .img3
         -webkit-transform rotateZ(-368deg) //-8
-        -webkit-animation img3 800ms forwards
+        -webkit-animation img3 1.5s forwards
         -webkit-backface-visibility hidden
         -webkit-perspective 1000
     .img4    
         -webkit-transform rotateZ(356deg) //4
-        -webkit-animation img4 800ms forwards
+        -webkit-animation img4 1.5s forwards
         -webkit-backface-visibility hidden
         -webkit-perspective 1000
 
@@ -401,7 +403,19 @@ figure
     background none
     -webkit-filter drop-shadow(0 0 0 rgba(255,255,255,0))
 
+    &:after
+        content '搏命加载中..'
+        position absolute
+        left 50%
+        top 50%
+        color #fff
+        font-size 2em
+        margin: .5em 0 0 -2.5em
+        z-index 1
+        -webkit-animation loading 500ms ease-in-out infinite 
+
     div
+        opacity 0
         position absolute
         width 100%
         height 100%
@@ -414,19 +428,29 @@ figure
         background-color #FFF
         -webkit-filter drop-shadow(0 0 20px rgba(255,255,255,.9))
         -webkit-transform-origin 3.5em -2.5em
+        z-index 2
 
     .pao
         -webkit-animation pao 1s linear forwards 
 
 @-webkit-keyframes pao
     0%, 2.5%
+        opacity .5
         -webkit-transform rotateZ(-30deg)
     32.5%, 35%
+        opacity 1
         -webkit-transform rotateZ(10deg)
     65%, 67.5%
+        opacity 1
         -webkit-transform rotateZ(-5deg)
     97.5%, 100%
+        opacity 1
         -webkit-transform rotateZ(0deg)
     
-
-
+@-webkit-keyframes loading
+    0%
+        opacity .8
+    50%
+        opacity 1
+    100%
+        opacity .8

@@ -8,27 +8,8 @@
     <link rel="stylesheet" href="index.css">
     <link rel="apple-touch-icon" sizes="114x114" href="apple-touch-icon114.png" />
     <link rel="apple-touch-icon" sizes="57x57" href="apple-touch-icon57.png" />
-    <!--<script type="text/javascript"
-      src="http://maps.googleapis.com/maps/api/js?key=AIzaSyBTUiButPTdfVHRJdcQlKedQLvx1i_58tU&sensor=true">
-    </script>
-    <script>
-    var map;
-    function initialize() {
-        var mapOptions = {
-        zoom: 18,
-        center: new google.maps.LatLng(22.232257, 113.551292)
-        };
-        map = new google.maps.Map(document.getElementById('map-canvas'),
-          mapOptions);
-    }
-
-    google.maps.event.addDomListener(window, 'load', initialize);
-
-    </script> google maps-->
-    <script type="text/javascript" src="http://api.map.baidu.com/api?type=quick&ak=ujhtZe5gckxL5bK4CsDuiV1P&v=1.0"></script>
-
 </head>
-<body onload="initMap();">
+<body >
 	
     <header>
 		<p>吴先生 <span>&#38;</span> 庄小姐</p>
@@ -55,17 +36,19 @@
         <strong>交通指引:</strong>
         <p class="indent0">珠海市香洲区拱北北岭岭南路68号正邦广场3楼XXX厅(沃尔玛拱 北店楼上)</p>
         <p class="indent0">酒店电话 <span type="tel">(0756)6838888</span> <span type="tel">(0756)6838882</span> </p>
-        <!-- <a href="http://l.map.qq.com/6246273790?m"><img src="img/map.png" alt="正邦广场"></a>
-        <a class="tac" href="http://l.map.qq.com/6246273790?m">(触摸地图导航)</a> -->
+        <!-- maps -->
         <div class="map" id="map-canvas" >
-            
+            <a href="http://j.map.baidu.com/XyHav">
+               <img src="http://api.map.baidu.com/staticimage?center=113.557423,22.238211&zoom=18&scale=2&markers=113.557423,22.238211" alt="珠海市香洲区拱北北岭岭南路68号正邦广场3楼(沃尔玛拱 北店楼上)"> 
+            </a>
+            <a class="tac" href="http://j.map.baidu.com/XyHav">(触摸地图导航)</a>
         </div>
         <i class="tran3"></i>
     </article>
     <article class="last">
         <strong>再次温馨提示</strong>
         <p>宴会时间: 2014年公历8月29日(农历八月初五)星期五下午6时</p>
-        <p>宴会地点:  <a href="http://l.map.qq.com/6246273790?m" >珠海市香洲区拱北北岭岭南路68号<br>正邦广场3楼XXX厅(导航位置)</a></p>
+        <p>宴会地点:  <a href="http://j.map.baidu.com/XyHav" >珠海市香洲区拱北北岭岭南路68号<br>正邦广场3楼XXX厅(导航位置)</a></p>
         <p>宴会接待: <br>吴煌<span type="tel">15920485924</span>,</p>
         <p>吴煌<span type="tel">15920485924</span></p>
     </article>
@@ -83,18 +66,5 @@
     }
 
 </script>
-<script type="text/javascript">
-    var map = new BMap.Map("map-canvas");  
-    map.centerAndZoom(new BMap.Point(113.557152,22.238018), 17);  
-    var marker = new BMap.Marker(new BMap.Point(113.557152,22.238018));        // 创建标注      
-    map.addOverlay(marker);
-    var opts = {      
-        width : 100,     // 信息窗口宽度      
-        height: 50,     // 信息窗口高度      
-        title : "正邦广场"  // 信息窗口标题     
-    }      
-    var infoWindow = new BMap.InfoWindow("珠海市香洲区拱北北岭岭南路68号", opts);  // 创建信息窗口对象      
-    map.openInfoWindow(infoWindow, marker.getPosition());      // 打开信息窗口  
 
-</script>
 </html>
