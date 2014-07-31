@@ -85,15 +85,15 @@
 </script>
 <script type="text/javascript">
     var map = new BMap.Map("map-canvas");  
-    map.centerAndZoom(new BMap.Point(113.557152,22.238018), 14);  
+    map.centerAndZoom(new BMap.Point(113.557152,22.238018), 18);  
     var marker = new BMap.Marker(new BMap.Point(113.557152,22.238018));        // 创建标注      
     map.addOverlay(marker);
     var opts = {      
         width : 100,     // 信息窗口宽度      
         height: 50,     // 信息窗口高度      
-        title : "Hello"  // 信息窗口标题     
+        title : "正邦广场"  // 信息窗口标题     
     }      
-    var infoWindow = new BMap.InfoWindow("World", opts);  // 创建信息窗口对象      
+    var infoWindow = new BMap.InfoWindow("珠海市香洲区拱北北岭岭南路68号", opts);  // 创建信息窗口对象      
     map.openInfoWindow(infoWindow, marker.getPosition());      // 打开信息窗口  
    var myGeo = new BMap.Geocoder();      
     // 根据坐标得到地址描述    
