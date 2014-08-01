@@ -331,13 +331,13 @@ figure .img4 {
 }
 .imgs .img1 {
   -webkit-transform: rotateZ(-367deg);
-  -webkit-animation: img1 3s forwards 1.5s;
+  -webkit-animation: img1 3s forwards 1s;
   -webkit-backface-visibility: hidden;
   -webkit-perspective: 1000;
 }
 .imgs .img2 {
   -webkit-transform: rotateZ(355deg);
-  -webkit-animation: img2 2.5s forwards 1s;
+  -webkit-animation: img2 2.5s forwards 0.5s;
   -webkit-backface-visibility: hidden;
   -webkit-perspective: 1000;
 }
