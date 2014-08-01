@@ -356,14 +356,6 @@ figure .img4 {
     opacity: 0;
     -webkit-transform: rotateZ(0);
   }
-  30% {
-    opacity: 0.8;
-    -webkit-transform: rotateZ(0);
-  }
-  70% {
-    opacity: 1;
-    -webkit-transform: rotateZ(-360deg);
-  }
   100% {
     opacity: 1;
     -webkit-transform: rotateZ(-367deg);
@@ -373,14 +365,6 @@ figure .img4 {
   0% {
     opacity: 0;
     -webkit-transform: rotateZ(0);
-  }
-  30% {
-    opacity: 0.3;
-    -webkit-transform: rotateZ(0);
-  }
-  80% {
-    opacity: 0.8;
-    -webkit-transform: rotateZ(-348deg);
   }
   100% {
     opacity: 1;
@@ -392,14 +376,6 @@ figure .img4 {
     opacity: 0;
     -webkit-transform: rotateZ(0);
   }
-  30% {
-    opacity: 0.3;
-    -webkit-transform: rotateZ(0);
-  }
-  90% {
-    opacity: 0.8;
-    -webkit-transform: rotateZ(-360deg);
-  }
   100% {
     opacity: 1;
     -webkit-transform: rotateZ(-368deg);
@@ -410,7 +386,7 @@ figure .img4 {
     opacity: 0;
   }
   40% {
-    opacity: 0.3;
+    opacity: 0.5;
   }
   100% {
     opacity: 1;
