@@ -206,6 +206,8 @@ header
         height 6em
         left 0
         top 0
+        -webkit-transform-origin 0 0
+        -webkit-animation avatar 1s ease-in-out infinite
 
 article
     position relative
@@ -274,10 +276,23 @@ figure
     height 22em
     margin-bottom 1.5em
 
+    &:after
+        content '搏命加载中..'
+        position absolute
+        left 50%
+        top 50%
+        color #fff
+        font-size 2em
+        margin: -2.5em 0 0 -2.5em
+        z-index 1
+        -webkit-animation loading 500ms ease-in-out infinite 
+
     img
         opacity 0
-        box-shadow 0 0 8px #000
         border-radius 1px
+        border 3px solid #fff
+        box-shadow 0 0 3px #000
+        box-sizing border-box
 
     .img1
         position absolute
@@ -309,19 +324,22 @@ figure
 
 .imgs
     
+    &:after
+        display none
+    
     .img1
         -webkit-transform rotateZ(-367deg) //-7deg
-        -webkit-animation img1 2s forwards
+        -webkit-animation img1 3s forwards 1.5s
         -webkit-backface-visibility hidden
         -webkit-perspective 1000
     .img2
         -webkit-transform rotateZ(355deg) //5
-        -webkit-animation img2 2s forwards
+        -webkit-animation img2 2.5s forwards 1s
         -webkit-backface-visibility hidden
         -webkit-perspective 1000
     .img3
         -webkit-transform rotateZ(-368deg) //-8
-        -webkit-animation img3 2s forwards
+        -webkit-animation img3 1.5s forwards .5s
         -webkit-backface-visibility hidden
         -webkit-perspective 1000
     .img4    
@@ -349,29 +367,29 @@ figure
 @-webkit-keyframes img1
     0%
         opacity 0
-        -webkit-transform rotateZ(-0)
+        -webkit-transform rotateZ(-0) translateY(-12em)
 
     100%
         opacity 1
-        -webkit-transform rotateZ(-367deg)
+        -webkit-transform rotateZ(-367deg) translateY(0)
 
 @-webkit-keyframes img2
     0%
         opacity 0
-        -webkit-transform rotateZ(-0)
+        -webkit-transform rotateZ(0) translateY(-12em)
 
     100%
         opacity 1
-        -webkit-transform rotateZ(-355deg)
+        -webkit-transform rotateZ(355deg) translateY(0)
 
 @-webkit-keyframes img3
     0%
         opacity 0
-        -webkit-transform rotateZ(-0)
+        -webkit-transform rotateZ(-0) translateY(-12em)
 
     100%
         opacity 1
-        -webkit-transform rotateZ(-368deg)
+        -webkit-transform rotateZ(-368deg) translateY(0)
 
 @-webkit-keyframes img4
     0%
@@ -381,6 +399,18 @@ figure
     100%
         opacity 1
 
+@-webkit-keyframes loading
+    0%
+        opacity .8
+    50%
+        opacity 1
+    100%
+        opacity .8
 
-
-
+@-webkit-keyframes avatar
+    0%
+        -webkit-transform scale(.85,.85)
+    50%
+        -webkit-transform scale(.9,.9)
+    100%
+        -webkit-transform scale(.85,.85)
