@@ -226,9 +226,10 @@ article {
 }
 article strong {
   display: block;
-  font-size: 1.6em;
+  font-size: 2em;
   line-height: 1.4em;
   text-indent: 1em;
+  font-weight: 700;
 }
 article p {
   font-size: 1.5em;
