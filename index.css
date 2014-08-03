@@ -281,13 +281,13 @@ figure {
   margin-bottom: 1.5em;
 }
 figure:after {
-  content: '加载中..';
+  content: '加载中...';
   position: absolute;
   left: 50%;
   top: 50%;
   color: #fff;
   font-size: 2em;
-  margin: -2.5em 0 0 -2.5em;
+  margin: -2.5em 0 0 -2em;
   z-index: 1;
   -webkit-animation: loading 500ms ease-in-out infinite;
 }
