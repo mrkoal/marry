@@ -129,6 +129,20 @@ shareWeibo();
             // 用户取消分享后执行的回调函数
         }
     });
+    wx.onMenuShareAppMessage({
+    title: '吴炜清&庄冬荀婚宴请柬', // 分享标题
+    desc: '谨订于2014年公历8月29日(农历八月初五)星期五下午6时,于珠海 益健美食大广场3楼荣华厅举行“吴炜清 庄冬荀”结婚典礼，敬备喜筵 ！', // 分享描述
+    link: 'http://mrkoal.github.io/marry', // 分享链接
+    imgUrl: 'http://mrkoal.github.io/marry/img/share.png', // 分享图标
+    type: '', // 分享类型,music、video或link，不填默认为link
+    dataUrl: '', // 如果type是music或video，则要提供数据链接，默认为空
+    success: function () {
+        // 用户确认分享后执行的回调函数
+    },
+    cancel: function () {
+        // 用户取消分享后执行的回调函数
+    }
+});
 </script>
 <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
 </html>
